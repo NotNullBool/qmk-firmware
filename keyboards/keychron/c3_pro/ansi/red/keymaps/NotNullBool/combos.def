@@ -1,0 +1,6 @@
+COMB(weEsc,      KC_ESC,          KC_W, KC_E)
+COMB(sdBspc,     KC_BSPC,         LALT_T(KC_S), LSFT_T(KC_D))
+COMB(dfTab,      KC_TAB,          LSFT_T(KC_D), LCTL_T(KC_F))
+COMB(lsemiEnt,   KC_ENT,          LALT_T(KC_L), RGUI_T(KC_SCLN))
+COMB(uiEsc,      KC_ESC,          KC_U, KC_I)
+COMB(jkCol,      KC_COLN,         RCTL_T(KC_J), RSFT_T(KC_K))
