@@ -29,6 +29,7 @@ enum layers{
     BASE,
     BASE_QWERTY,
     BASE_GAMING,
+    BASE_PROGRAMMING,
     FN,
 };
 
@@ -69,7 +70,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,          KC_Q,         KC_W,         KC_F,         KC_P,         KC_B,     KC_J,     KC_L,         KC_U,         KC_Y,         KC_SCLN,      KC_LBRC,  KC_RBRC,     KC_BSLS,               KC_DEL,   KC_END,   KC_PGDN,
         _______,   LGUI_T(KC_A), LALT_T(KC_R), LSFT_T(KC_S), LCTL_T(KC_T), KC_G,     KC_M,     RCTL_T(KC_N), RSFT_T(KC_E), LALT_T(KC_I), RGUI_T(KC_O), KC_QUOT,               RSFT_T(KC_ENT),
         KC_LSFT,                       KC_X,         KC_C,         KC_D,         KC_V,     KC_Z,     KC_K,         KC_H,         KC_COMM,      KC_DOT,       KC_SLSH,               KC_RSFT,                         KC_UP,
-        KC_LCTL,         KC_LWIN,      KC_LALT,                                            KC_SPC,                                             KC_RALT,      MO(FN),   KC_LWIN,     KC_RCTL,               KC_LEFT,  KC_DOWN,  KC_RGHT),
+        KC_LCTL,         KC_LWIN,      KC_LALT,                                            LT(BASE_PROGRAMMING,KC_SPC),                                             KC_RALT,      MO(FN),   KC_LWIN,     KC_RCTL,               KC_LEFT,  KC_DOWN,  KC_RGHT),
 
     [BASE_QWERTY] = LAYOUT_tkl_ansi(
         _______,             _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,           _______,    _______,  _______,  _______,  _______,
@@ -86,6 +87,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,   KC_LSFT, KC_A,     KC_S,     KC_D,     KC_F,     KC_G,   KC_H,   KC_J,     KC_K,     KC_L,     KC_SCLN,     _______,
         _______,             KC_LCTL, KC_Z,     KC_X,     KC_C,     KC_V,     KC_B,     KC_N,     KC_M,     KC_COMM,  KC_DOT,   KC_SLSH,                       _______,
         _______,   _______,  _______,                                _______,                                _______,  _______,  _______,    _______,  _______,  _______,  _______),
+
+    [BASE_PROGRAMMING] = LAYOUT_tkl_ansi(
+        _______,             _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,           _______,    _______,  _______,  _______,  _______,
+        _______,   _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,           _______,    _______,  _______,  _______,  _______,
+        _______,   LSFT_T(KC_1),     LSFT_T(KC_2),     LSFT_T(KC_3),     LSFT_T(KC_4),     LSFT_T(KC_5),     LSFT_T(KC_9),     LSFT_T(KC_0),     LSFT_T(KC_MINS),     LSFT_T(KC_EQL),     LSFT_T(KC_GRV),  _______,           _______,    _______,  _______,  _______,  _______,
+        _______,   LGUI_T(KC_6),     LALT_T(KC_7),     LSFT_T(KC_8),     LCTL_T(KC_9),     KC_0,        KC_LBRC,   RCTL_T(KC_RBRC),     RSFT_T(KC_MINS),     LALT_T(KC_EQL),     RGUI_T(KC_GRV),     _______,                       _______,
+        _______,   LSFT_T(KC_PDOT),          LSFT_T(KC_PPLS),          LSFT_T(KC_PMNS),          LSFT_T(KC_PAST),          LSFT_T(KC_PSLS),     LSFT_T(KC_LBRC),     LSFT_T(KC_RBRC),     LSFT_T(KC_SCLN),  LSFT_T(KC_SCLN),   LSFT_T(KC_NUBS),                       _______,            _______,
+        _______,   _______,  _______,                                _______,                                _______,  _______,  _______,    _______,  _______,  _______,  _______
+    ),
 
     [FN] = LAYOUT_tkl_ansi(
         _______,            KC_BRID,  KC_BRIU,  _______,  _______,  BL_DOWN,  BL_UP,    KC_MPRV,  KC_MPLY,  KC_MNXT,  KC_MUTE,  KC_VOLD,    KC_VOLU,  DF(BASE_GAMING),  DF(BASE_QWERTY),  DF(BASE),
