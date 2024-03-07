@@ -93,7 +93,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,   _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,           _______,    _______,  _______,  _______,  _______,
         _______,   LSFT_T(KC_1),     LSFT_T(KC_2),     LSFT_T(KC_3),     LSFT_T(KC_4),     LSFT_T(KC_5),     LSFT_T(KC_GRV),  LSFT_T(KC_QUOT),  LSFT_T(KC_COMM),     LSFT_T(KC_DOT),    LSFT_T(KC_NUBS),  _______,           _______,    _______,  _______,  _______,  _______,
         _______,   LGUI_T(KC_6),     LALT_T(KC_7),     LSFT_T(KC_8),     LCTL_T(KC_9),     KC_0,             KC_LBRC,         RCTL_T(KC_RBRC),  RSFT_T(KC_MINS),     LALT_T(KC_EQL),    RGUI_T(KC_SCLN),     _______,                       _______,
-        _______,   LSFT_T(KC_DOT),   LSFT_T(KC_PPLS),  LSFT_T(KC_PMNS),  LSFT_T(KC_PAST),  LSFT_T(KC_PSLS),  LSFT_T(KC_GRV),  LSFT_T(KC_QUOT),  LSFT_T(KC_COMM),     LSFT_T(KC_DOT),    LSFT_T(KC_SLSH),                       _______,            _______,
+        _______,   LSFT_T(KC_DOT),   LSFT_T(KC_PPLS),  LSFT_T(KC_PMNS),  LSFT_T(KC_PAST),  LSFT_T(KC_SLSH),  LSFT_T(KC_GRV),  LSFT_T(KC_QUOT),  LSFT_T(KC_COMM),     LSFT_T(KC_DOT),    LSFT_T(KC_SLSH),                       _______,            _______,
         _______,   _______,  _______,                                _______,                                _______,  _______,  _______,    _______,  _______,  _______,  _______
     ),
 
